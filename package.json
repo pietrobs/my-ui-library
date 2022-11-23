@@ -1,0 +1,24 @@
+{
+  "name": "my-ui-library",
+  "version": "1.0.0",
+  "description": "React frontend library with tests, storybook and CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietrobs/my-ui-library.git"
+  },
+  "keywords": [
+    "React",
+    "UI",
+    "Library"
+  ],
+  "author": "Pietro Schiavinato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pietrobs/my-ui-library/issues"
+  },
+  "homepage": "https://github.com/pietrobs/my-ui-library#readme"
+}
