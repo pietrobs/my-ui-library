@@ -25,7 +25,10 @@
   "homepage": "https://github.com/pietrobs/my-ui-library#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.3"
   },
   "config": {
     "commitizen": {
