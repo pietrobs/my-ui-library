@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,17 @@
   },
   "homepage": "https://github.com/pietrobs/my-ui-library#readme",
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   }
 }
