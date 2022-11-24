@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog Component Openned Should match snapshot 1`] = `
+<div
+  className="sc-bcXHqe dVqXFG"
+>
+  <div
+    className="dialog-overlay"
+    data-testid="dialog-overlay"
+  >
+    <div
+      className="dialog"
+    >
+      <div
+        className="dialog-header"
+      >
+        <h1>
+          Title
+        </h1>
+        <button
+          onClick={[Function]}
+        >
+          <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 1L8 8L15 15"
+              stroke="black"
+              strokeWidth="1.2"
+            />
+            <path
+              d="M1 1L8 8L0.999999 15"
+              stroke="black"
+              strokeWidth="1.2"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="dialog-content"
+      >
+        Dialog content
+      </div>
+    </div>
+  </div>
+</div>
+`;

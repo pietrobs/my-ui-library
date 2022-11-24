@@ -27,7 +27,7 @@ const Dialog: React.FC<DialogProps> = ({
 
   return ReactDOM.createPortal(
     <DialogWrapper>
-      <div className="dialog-overlay">
+      <div className="dialog-overlay" data-testid="dialog-overlay">
         <div className="dialog" ref={listenerClickAwayRef}>
           <DialogHeader title={title} onClose={onClose} />
           <div className="dialog-content">{children}</div>
