@@ -1,6 +1,6 @@
 {
   "name": "@pietrobs/my-ui-library",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "React frontend library with tests, storybook and commitizen",
   "author": "Pietro Schiavinato",
   "license": "ISC",
