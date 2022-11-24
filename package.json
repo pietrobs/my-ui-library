@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/pietrobs/my-ui-library#readme",
   "devDependencies": {
+    "@types/styled-components": "^5.1.26",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.0",
     "react": "^18.2.0",
@@ -34,5 +35,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "styled-components": "^5.3.6"
   }
 }
