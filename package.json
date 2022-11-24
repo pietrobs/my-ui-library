@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --coverage",
     "commit": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,14 @@
   "homepage": "https://github.com/pietrobs/my-ui-library#readme",
   "devDependencies": {
     "@jest/globals": "^29.3.1",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/manager-webpack4": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",

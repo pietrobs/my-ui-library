@@ -18,5 +18,13 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
   },
-  "exclude": ["dist", "node_modules", "**/*.spec.tsx", "**/*.spec.ts"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
+    "**/*.stories.tsx",
+    ".vscode",
+    ".storybook"
+  ]
 }
