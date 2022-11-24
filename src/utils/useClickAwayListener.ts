@@ -1,8 +1,8 @@
-import { RefObject, useEffect } from "react";
+import { type RefObject, useEffect } from 'react';
 
 function useClickAwayListener<T extends HTMLElement = HTMLElement>(
   ref: RefObject<T | undefined>,
-  callback?: () => void
+  callback?: () => void,
 ) {
   useEffect(() => {
     const listener = (event: MouseEvent) => {
@@ -15,9 +15,9 @@ function useClickAwayListener<T extends HTMLElement = HTMLElement>(
       }
     };
 
-    document.addEventListener("click", listener);
+    document.addEventListener('click', listener);
     return () => {
-      document.removeEventListener("click", listener);
+      document.removeEventListener('click', listener);
     };
   }, [callback, ref]);
 }

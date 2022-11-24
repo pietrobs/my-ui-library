@@ -1,6 +1,6 @@
 import React from 'react';
-import { describe, test, expect, it, jest } from '@jest/globals';
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { describe, test, expect, jest } from '@jest/globals';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import useClickAwayListener from './useClickAwayListener';
 

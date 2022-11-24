@@ -1,11 +1,11 @@
-import React from "react";
-import { useRef } from "react";
-import ReactDOM from "react-dom";
-import useClickAwayListener from "../../utils/useClickAwayListener";
-import useKeyPressListener from "../../utils/useKeyPressListener";
-import { DialogWrapper } from "./Dialog.styles";
-import { DialogProps } from "./Dialog.types";
-import DialogHeader from "./DialogHeader";
+import React from 'react';
+import { useRef } from 'react';
+import ReactDOM from 'react-dom';
+import useClickAwayListener from '../../utils/useClickAwayListener';
+import useKeyPressListener from '../../utils/useKeyPressListener';
+import { DialogWrapper } from './Dialog.styles';
+import { DialogProps } from './Dialog.types';
+import DialogHeader from './DialogHeader';
 
 const Dialog: React.FC<DialogProps> = ({
   children,
@@ -18,10 +18,10 @@ const Dialog: React.FC<DialogProps> = ({
 
   useClickAwayListener(
     listenerClickAwayRef,
-    closeOnOverlayClick ? onClose : undefined
+    closeOnOverlayClick ? onClose : undefined,
   );
 
-  useKeyPressListener("Escape", isOpen ? onClose : undefined);
+  useKeyPressListener('Escape', isOpen ? onClose : undefined);
 
   if (!isOpen) return null;
 
@@ -34,7 +34,7 @@ const Dialog: React.FC<DialogProps> = ({
         </div>
       </div>
     </DialogWrapper>,
-    document.body
+    document.body,
   );
 };
 

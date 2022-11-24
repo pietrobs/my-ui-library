@@ -1,5 +1,5 @@
 import React from 'react';
-import { describe, test, expect, it, jest } from '@jest/globals';
+import { describe, test, expect, jest } from '@jest/globals';
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
@@ -11,7 +11,7 @@ const dialogContent = 'Dialog content';
 
 const MockedComponent = ({
   closeOnOverlayClick = true,
-  onClose = () => {},
+  onClose = jest.fn(),
   isOpen = true,
 }: {
   closeOnOverlayClick?: boolean;
@@ -30,7 +30,7 @@ const MockedComponent = ({
 
 describe('Dialog Component Openned', () => {
   test('Should match snapshot', () => {
-    ReactDOM.createPortal = jest.fn((element, node) => {
+    ReactDOM.createPortal = jest.fn((element) => {
       return element;
     }) as any;
 

@@ -1,12 +1,12 @@
-export interface DialogProps {
+export type DialogProps = {
   title?: string;
   isOpen: boolean;
   onClose: () => void;
   closeOnOverlayClick: boolean;
   children?: React.ReactNode;
-}
+};
 
-export interface DialogHeaderProps {
+export type DialogHeaderProps = {
   title?: string;
   onClose: () => void;
-}
+};
