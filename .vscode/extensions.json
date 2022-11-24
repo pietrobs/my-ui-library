@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "firsttris.vscode-jest-runner",
+    "esbenp.prettier-vscode",
+    "VirejDasani.incredibly-in-your-face",
+    "styled-components.vscode-styled-components"
+  ],
+  "unwantedRecommendations": []
+}
