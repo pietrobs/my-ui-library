@@ -12,13 +12,13 @@ jobs:
       - run: git tag ${VERSION}
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
-
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
+      - run: npm test
       - run: npm run build
       - run: npm publish --access public
         env:
