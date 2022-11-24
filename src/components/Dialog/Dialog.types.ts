@@ -5,3 +5,8 @@ export interface DialogProps {
   closeOnOverlayClick: boolean;
   children?: React.ReactNode;
 }
+
+export interface DialogHeaderProps {
+  title?: string;
+  onClose: () => void;
+}
