@@ -4,7 +4,8 @@
   "description": "React frontend library with tests, storybook and CI",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/pietrobs/my-ui-library/issues"
   },
-  "homepage": "https://github.com/pietrobs/my-ui-library#readme"
+  "homepage": "https://github.com/pietrobs/my-ui-library#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
